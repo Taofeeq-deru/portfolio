@@ -31,6 +31,7 @@ class ProjectSerializer(serializers.ModelSerializer):
             "id",
             "name",
             "about_project",
+            "language_used",
             "project_url",
             "repo_url",
             "image_1",
