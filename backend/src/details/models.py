@@ -2,7 +2,6 @@ from django.db import models
 
 # Create your models here.
 class Contact(models.Model):
-    avatar = models.ImageField(upload_to="images")
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     about_me = models.TextField()
@@ -10,10 +9,11 @@ class Contact(models.Model):
     email = models.EmailField()
     linkedin_url = models.CharField(max_length=2000)
     github_url = models.CharField(max_length=2000)
+    avatar = models.ImageField(upload_to="images")
 
 
 class Skill(models.Model):
-    skill = models.CharField(max_length=50)
+    language = models.CharField(max_length=50)
     skill_strength = models.IntegerField()
 
 
