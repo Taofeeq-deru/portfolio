@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     # third party
     "corsheaders",
     "rest_framework",
-    "drf_multiple_model",
+    "rest_framework.authtoken",
     # owned
     "details.apps.DetailsConfig",
 ]

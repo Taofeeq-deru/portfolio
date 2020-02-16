@@ -7,7 +7,7 @@ class ContactAdmin(admin.ModelAdmin):
 
 
 class SkillAdmin(admin.ModelAdmin):
-    list_display = ("skill", "skill_strength")
+    list_display = ("language", "skill_strength")
 
 
 admin.site.register(Contact, ContactAdmin)

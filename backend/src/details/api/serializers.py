@@ -7,7 +7,6 @@ class ContactSerializer(serializers.ModelSerializer):
         model = Contact
         fields = (
             "id",
-            "avatar",
             "first_name",
             "last_name",
             "about_me",
@@ -15,13 +14,14 @@ class ContactSerializer(serializers.ModelSerializer):
             "email",
             "linkedin_url",
             "github_url",
+            "avatar"
         )
 
 
 class SkillSerializer(serializers.ModelSerializer):
     class Meta:
         model = Skill
-        fields = ("id", "skill", "skill_strength")
+        fields = ("id", "language", "skill_strength")
 
 
 class ProjectSerializer(serializers.ModelSerializer):
