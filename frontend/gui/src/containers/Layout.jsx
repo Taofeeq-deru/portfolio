@@ -2,9 +2,10 @@ import React from "react";
 import axios from "axios";
 import { Affix } from "antd";
 import ScrollAnimation from "react-animate-on-scroll";
+import Nav from "../components/Nav";
 import Introduction from "../components/Intro";
 import About from "../components/About";
-import Nav from "../components/Nav";
+import Projects from "../components/Projects";
 
 class MainLayaout extends React.Component {
   state = {
@@ -37,13 +38,24 @@ class MainLayaout extends React.Component {
             }}
           />
         </Affix>
-        <ScrollAnimation
-          animateIn="fadeInLeft"
-          animateOut="fadeOutRight"
-          duration="2"
-        >
-          <About contact={this.state.contact} skill={this.state.skill} />
-        </ScrollAnimation>
+        <div style={{ backgroundColor: "#e9e9e9" }}>
+          <ScrollAnimation
+            animateIn="fadeInLeft"
+            animateOut="fadeOutRight"
+            duration="2"
+          >
+            <About contact={this.state.contact} skill={this.state.skill} />
+          </ScrollAnimation>
+        </div>
+        <div style={{ backgroundColor: "#ffffff" }}>
+          <ScrollAnimation
+            animateIn="fadeInRight"
+            animateOut="fadeOutLeft"
+            duration="2"
+          >
+            <Projects />
+          </ScrollAnimation>
+        </div>
       </div>
     );
   }

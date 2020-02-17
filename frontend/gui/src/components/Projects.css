@@ -1,0 +1,13 @@
+.container {
+  padding: 2.5em;
+}
+
+#Projects h1 {
+  color: #282c34;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+#content {
+  margin-top: 2em;
+}

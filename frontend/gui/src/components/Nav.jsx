@@ -28,7 +28,7 @@ class Nav extends React.Component {
         <Menu.Item key="about">
           <a href="#About">About</a>
         </Menu.Item>
-        <Menu.Item key="portfolio">Portfolio</Menu.Item>
+        <Menu.Item key="portfolio">Projects</Menu.Item>
         <Menu.Item key="contact">Contact</Menu.Item>
       </Menu>
     );
