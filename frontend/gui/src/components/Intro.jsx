@@ -37,9 +37,11 @@ class Introduction extends Component {
                 ]}
               />
             </p>
-            <Button size="large" ghost>
-              View my works
-            </Button>
+            <a href="#Projects">
+              <Button size="large" ghost>
+                View my works
+              </Button>
+            </a>
           </div>
         </div>
       </>

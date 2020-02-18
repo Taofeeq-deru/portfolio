@@ -21,6 +21,7 @@ class Project(models.Model):
     name = models.CharField(max_length=200)
     about_project = models.TextField()
     language_used = models.CharField(max_length=1000, default="")
+    display_skills = models.CharField(max_length=1000, default="")
     project_url = models.CharField(max_length=2000)
     repo_url = models.CharField(max_length=2000)
     image_1 = models.ImageField(upload_to="images/project")
