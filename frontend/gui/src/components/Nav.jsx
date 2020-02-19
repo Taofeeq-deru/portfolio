@@ -7,7 +7,6 @@ class Nav extends React.Component {
   };
 
   handleClick = (e) => {
-    console.log("click ", e);
     this.setState({
       current: e.key
     });
@@ -28,8 +27,12 @@ class Nav extends React.Component {
         <Menu.Item key="about">
           <a href="#About">About</a>
         </Menu.Item>
-        <Menu.Item key="portfolio">Projects</Menu.Item>
-        <Menu.Item key="contact">Contact</Menu.Item>
+        <Menu.Item key="portfolio">
+          <a href="#Projects">Projects</a>
+        </Menu.Item>
+        <Menu.Item key="contact">
+          <a href="#Contact">Contact</a>
+        </Menu.Item>
       </Menu>
     );
   }
